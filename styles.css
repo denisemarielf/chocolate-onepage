@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+main{
+    width: 100vw;
+   
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+#hero-image {
+    position:relative;
+    text-align: center;
+    bottom: 0px;
+}
+
+#hero-image > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.671);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 20px;
+   
+}
+
+#hero-image > div > button, form > button {
+    border: 1px solid transparent;
+    background-color: rgb(165, 69, 42);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 60%;
+    align-self: center;
+    
+}
+
+#hero-image > div > button:hover, form > button:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#products-container {
+  
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content:space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#products-section > h2 {
+    text-align: center;
+}
+
+.product {
+    border: 1px solid black;
+    padding: 10px;
+    height: 300px;
+    width: 250px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.product > img {
+    width: 150px;
+    height: 150px;
+}
+
+#products-section {
+    padding: 20px;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    overflow-y: auto;
+}
+
+#contact-us {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+}
+
+#contact-us > h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 600px;
+    align-self: center;
+    gap: 10px;
+}
+
+input {
+    height: 35px;
+}
+
+#location {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#social-media {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social-media:hover{
+    cursor: pointer;
+}
+
+#about-us {
+    display: flex;
+    background-color: #1B1B1B;
+    color: white;
+    height: fit-content;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+    
+}
+
+
+
+#about-us > img {
+    width: 30%;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#about-us > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    gap: 20px;
+    max-width: 600px;
+
+}
+
+#about-us>div>p>strong {
+    font-family: 'Pacifico', cursive;
+}
