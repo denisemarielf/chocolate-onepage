@@ -1,209 +1,362 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&family=Pacifico&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-body {
-
+#hamburguer-menu {
+  display: none;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
-nav > ul{
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    flex-wrap: wrap;
+h1:hover {
+  color: rgb(165, 69, 42);
 }
 
-main{
-    width: 100vw;
-   
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+main {
+  width: 100vw;
 }
 
 li {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
-a:link, a:visited, a:active{
-    text-decoration: none;
-    color: black;
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  color: rgb(165, 69, 42);
+  border-bottom: 1px solid #1b1b1b;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 #hero-image {
-    position:relative;
-    text-align: center;
-    bottom: 0px;
+  position: relative;
+  text-align: center;
+  bottom: 0px;
 }
 
 #hero-image > div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.671);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-around;
-    padding: 20px;
-   
-}
-
-#hero-image > div > button, form > button {
-    border: 1px solid transparent;
-    background-color: rgb(165, 69, 42);
-    color: white;
-    padding: 10px;
-    border-radius: 15px;
-    max-width: 60%;
-    align-self: center;
-    
-}
-
-#hero-image > div > button:hover, form > button:hover {
-    border: 1px solid black;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.853);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 #products-container {
-  
-    height: auto; 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content:space-around;
-    padding: 20px;
-    flex-wrap: wrap;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 #products-section > h2 {
-    text-align: center;
+  text-align: center;
+  color: white;
 }
 
 .product {
-    border: 1px solid black;
-    padding: 10px;
-    height: 300px;
-    width: 250px;
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+  background-color: white;
+  height: min-content;
+  width: 250px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.product:hover {
+  transform: scale(1.02);
 }
 
 .product > img {
-    width: 150px;
-    height: 150px;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #products-section {
-    padding: 20px;
-    width: 100%;
+  padding: 20px;
+  width: 100%;
+  background-color: #643928;
+  margin-top: -10px;
 }
 
 textarea {
-    resize: none;
-    overflow-y: auto;
+  resize: none;
+  overflow-y: auto;
 }
 
 #contact-us {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px;
+  padding-bottom: 0px;
 }
 
 #contact-us > h2 {
-    text-align: center;
+  text-align: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    max-width: 600px;
-    align-self: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 600px;
+  align-self: center;
+  gap: 10px;
 }
 
 input {
-    height: 35px;
+  height: 35px;
 }
 
 #location {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  padding-top: 0px;
 }
 
 #info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #social-media {
-    font-size: 40px;
-    display: flex;
-    justify-content: space-between;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
-#social-media:hover{
-    cursor: pointer;
+i:hover {
+  color: rgb(165, 69, 42);
+}
+
+#social-media:hover {
+  cursor: pointer;
 }
 
 #about-us {
-    display: flex;
-    background-color: #1B1B1B;
-    color: white;
-    height: fit-content;
-    justify-content: space-evenly;
-    gap: 20px;
-    
-    
+  display: flex;
+  background-color: #1b1b1b;
+  color: white;
+  height: fit-content;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
-
-
 #about-us > img {
-    width: 30%;
-    max-width: 50%;
-    max-height: 50%;
+  width: 30%;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 #about-us > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  gap: 20px;
+  max-width: 600px;
+  padding-left: 20px;
+}
+
+#about-us > div > p > strong {
+  font-family: "Pacifico", cursive;
+}
+
+button {
+  background-color: rgb(165, 69, 42);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  max-width: fit-content;
+  align-self: center;
+}
+
+button:hover {
+  background-color: rgb(172, 101, 81);
+}
+
+button > a:link,
+button > a:visited,
+button > a:active {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid transparent;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: black;
+  color: black;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+}
+
+button:hover::before,
+:focus::before {
+  transform: scaleX(1);
+}
+
+small {
+  visibility: hidden;
+  text-align: justify;
+}
+
+input,
+textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#contact-us > p {
+  padding: 20px;
+  visibility: hidden;
+  align-self: center;
+  color: green;
+}
+
+/*mobile*/
+
+@media (max-width: 650px) {
+  body {
+    width: 100vw;
+  }
+
+  #hamburguer-menu {
     display: flex;
+    width: 10%;
+    font-size: larger;
+  }
+
+  #name-and-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+  }
+
+  nav > ul {
     flex-direction: column;
-    justify-content: center;
-    text-align: justify;
+    gap: 0px;
+  }
+
+  nav > ul > li {
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: larger;
+    background-color: #643928;
+    padding: 10px;
+  }
+  nav > ul > li > a:visited {
+    color: white;
+  }
+  header {
+    flex-direction: column;
+  }
+
+  #hero-image {
+    height: 300px;
+    display: flex;
+    background-image: url(images/jessica-loaiza-DHYfjAe_eeo-unsplash.jpg);
+    background-size: cover;
+  }
+
+  #hero-image > img {
+    display: none;
+  }
+
+  #hero-image > div {
+    height: fit-content;
+    width: 70%;
+  }
+
+  #about-us {
+    padding: 20px;
+  }
+  #about-us > img {
+    display: none;
+  }
+
+  #about-us > div {
+    padding: 0px;
+  }
+  form {
+    width: 100%;
+  }
+
+  #location {
+    flex-direction: column;
     gap: 20px;
-    max-width: 600px;
-
+  }
+  #info {
+    gap: 20px;
+    align-self: center;
+  }
+  #maps {
+    align-self: center;
+  }
 }
 
-#about-us>div>p>strong {
-    font-family: 'Pacifico', cursive;
-}
