@@ -72,7 +72,7 @@ img {
   background-color: rgba(255, 255, 255, 0.853);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   justify-content: space-around;
   padding: 20px;
 }
@@ -115,6 +115,13 @@ img {
   height: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.product > p {
+  padding: 10px;
+  min-height: 90px;
+  text-align: center;
 }
 
 #products-section {
@@ -130,7 +137,7 @@ textarea {
 }
 
 #contact-us {
-  
+  border-bottom: 1px solid #643928;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -149,6 +156,7 @@ form {
   max-width: 600px;
   align-self: center;
   gap: 10px;
+  
 }
 
 input {
@@ -159,7 +167,7 @@ input {
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  padding-top: 0px;
+  padding-top: 20px;
 }
 
 #info {
