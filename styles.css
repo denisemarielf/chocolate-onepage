@@ -282,7 +282,7 @@ textarea {
 
 /*mobile*/
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   body {
     width: 100vw;
   }
@@ -326,7 +326,7 @@ textarea {
   }
 
   #hero-image {
-    height: 300px;
+    height: 400px;
     display: flex;
     background-image: url(images/jessica-loaiza-DHYfjAe_eeo-unsplash.jpg);
     background-size: cover;
